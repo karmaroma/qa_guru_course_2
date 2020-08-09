@@ -22,7 +22,7 @@ public class Lepra {
         sleep(500);
         // Выбрать платежную систему
         $(".b-login-cruise-pay_method-img").click();
-        //Нажать олптатить
+        //Нажать оплатить
         $("#js-login-cruise_go").click();
         sleep(8000);
 

@@ -14,14 +14,14 @@ public class Soap {
 
         open("https://soap4.me/");
 
-        //act Регистрация аккаунта
+        //act: Регистрация аккаунта
         $(byText("регистрация")).click();
         $(byName("login")).sendKeys("Surname");
         $(byName("email")).sendKeys("test@mail.com");
         $(byName("password")).sendKeys("password");
         $(".button.corners").click();
 
-        //assert Логин уже занят
+        //assert: Логин уже занят
         $("#message").shouldBe(Condition.visible);
 
 

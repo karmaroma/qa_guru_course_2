@@ -11,7 +11,7 @@ public class Form {
         // Открыть форму
         open("http://suninjuly.github.io/simple_form_find_task.html");
 
-        // Нажать "Поехали"
+        // Act: Регистрация
         $(byTagName("input")).sendKeys("Name");
         $(byName("last_name")).sendKeys("Surname");
         $(byClassName("city")).sendKeys("DefaultCity");
