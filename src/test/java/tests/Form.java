@@ -19,6 +19,7 @@ public class Form {
         $(byCssSelector("button.btn")).click();
         sleep(2000);
 
+        //Assert - как проверить всплывающее окно с javascript ?
 
     }
 
