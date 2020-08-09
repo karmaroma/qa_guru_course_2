@@ -15,8 +15,8 @@ public class Form {
         $(byTagName("input")).sendKeys("Name");
         $(byName("last_name")).sendKeys("Surname");
         $(byClassName("city")).sendKeys("DefaultCity");
-        $(byId("country")).sendKeys("Russia");
-        $(byCssSelector("button.btn")).click();
+        $("#country").sendKeys("Russia");
+        $("#submit_button").click();
         sleep(2000);
 
         //Assert - как проверить всплывающее окно с javascript ?
