@@ -8,10 +8,10 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class Soap {
+
+public class SoapTests {
     @Test
     void registerFormTest() {
-
         open("https://soap4.me/");
 
         //act: Регистрация аккаунта
@@ -22,8 +22,6 @@ public class Soap {
         $(".button.corners").click();
 
         //assert: Логин уже занят
-        $("#message").shouldBe(Condition.visible);
-
-
+        $("#message").shouldHave(text("К сожалению этот логин занят, либо на этот почтовый адрес уже зарегистрирован аккаунт"));
     }
 }
